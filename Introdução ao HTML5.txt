@@ -1,0 +1,161 @@
+tecnologias-web.github.io
+Introdução ao HTML5
+Introdução ao HTML5
+O que é HTML
+Como funciona o HTML
+Estrutura Básica de um HTML
+DOCTYPE
+HTML
+HEAD
+BODY
+Tipos de Marcadores HTML
+Texto – Parágrafo
+Texto Negrito e Itálico
+Texto – Quebra de Linha
+Texto – Títulos
+Texto – Âncoras
+Marcadores de Mídia
+Mídia – Imagem
+Mídia – Áudio e Vídeo
+Marcadores de Estrutura
+Listas Ordenadas e Não Ordenadas
+Tabelas
+Pontos principais
+O que é HTML
+HTML é um acrônimo para HyperText Markup Language, ou Linguagem de Marcação de HiperTexto em português. Hipertexto é um texto com características extras, como formatação, imagens, multimídia e links para outros documentos.
+
+Marcação (ou Markup) é o processo de formatar o texto e adicionar símbolos extras. Cada símbolo usado pela marcação no HTML é um comando que diz ao navegador (browser) como exibir o texto.
+
+Criada em 1990, por Tim Berners-Lee, logo após a criação da web. A web, em sua concepção original, foi definida como uma rede de documentos hipertexto. O próprio protocolo de comunicação na web, HTTP, é baseado na troca de hipertextos (acrônimo para HiperText Transfer Protocol). O HTML é um padrão definido pela W3C, com diversas versões existentes, sendo a mais nova o HTML5
+
+O HTML5 combina novos elementos, dando mais recursos para a formatação das páginas. Além de recursos, as marcações adicionam maior valor semântico às páginas. Apesar do número 5 ser usado na marca, essa especificação está sempre em evolução:
+
+Versão 5.1 já lançada.
+Versão 5.2 em trabalho.
+Cada versão traz mais poder em recursos e semântica as páginas da web. O HTML é uma linguagem de marcação, e não de programação. HTML não possui estruturas comuns em linguagens de programação como estruturas de seleção, estruturas de repetição, variáveis, métodos ou classes.
+
+Como funciona o HTML
+É escrita em forma de marcadores (conhecidos como tags), criado pelos sinais < e >. Descreve a estrutura, aparência e semântica de um documento e permite encapsular códigos de linguagens de script. Um arquivo HTML é um arquivo de texto com uma extensão específica (.html ou .htm)
+
+O navegador, ao receber um arquivo HTML do servidor, interpreta este arquivo e apresenta a interface gráfica para o usuário. Um arquivo HTML puro é composto basicamente de uma estrutura de marcadores aninhados e seus atributos.
+
+Os marcadores dizem ao browser como o texto, a informação e as imagens serão exibidas. Por exemplo, um marcador diz se o texto será exibido em negrito, itálico e com um tipo de fonte qualquer. Além de formatação de texto um marcador também pode dizer que o pedaço do texto é endereço de outra página Web (link).
+
+Um marcador começa com “<” e termina com “>”:
+
+<nome_do_marcador>
+Entre os sinais < > o nome do marcador. A maioria dos marcadores possui um formato de abertura e um formato de fechamento. A única diferença entre eles é que no marcador de fechamento existe uma barra (/) logo após o sinal de > O formato genérico de um marcador é:
+
+<marcador> Texto </marcador>
+Alguns marcadores não necessitam de fechamento, então assumem o seguinte formato:
+
+<marcador />
+Os atributos definem propriedades dos marcadores, como tamanho, nome, identificador, classes CSS e valores:
+
+<marcador atributo="valor"> Texto </marcador>
+Existem atributos comuns a vários marcadores e atributos que são específicos de um marcador. O HTML não é case sensitive, ou seja, não diferencia letras maiúsculas de minúsculas. Entretanto, a forma correta e padronizada é utilizar apenas letra minúsculas. Importante criar esse hábito!
+
+Aprender HTML é aprender os marcadores definidos no padrão e como utilizá-los para construir uma página Web.
+
+O navegador não interpreta caracteres de quebra de linha (“enter”), tab, e mais que um caractere de espaçamento, ou seja, os três exemplos abaixo serão interpretados da mesma forma pelo navegador, exibindo o texto como no primeiro quadro
+
+Exemplos de caracteres em branco no HTML
+
+Resultado de caracteres em branco no HTML
+
+Estrutura Básica de um HTML
+Agora vamos apresentar a estrutura básica de tags esperada de um documento HTML.
+
+DOCTYPE
+Indica que o arquivo é um documento HTML, devendo ser a primeira linha do arquivo.
+
+Até a versão 4.01 do HTML, era necessário indicar a versão do HTML neste marcador. A partir da versão 5, esta declaração ficou simplificada. Como os navegadores modernos já estão preparados para interpretar a versão 5 do HTML, não é necessário declarar a versão:
+
+<!DOCTYPE html>
+HTML
+A tag <html> Inicia o documento HTML, logo após a declaração, e </html> finaliza, sendo a última linha do arquivo. Delimita a área onde serão colocados os marcadores HTML. Qualquer marcador deve ficar entre <html> e </html>, para que o navegador consiga interpretar e mostrar o resultado.
+
+HEAD
+Delimita a área de cabeçalho. O cabeçalho engloba marcadores de metadados, scripts, folhas de estilo, título da página. Define os metadados da página: Informações adicionais sobre a página HTML como codificação de caracteres, autor do documento, idioma, palavras chave.
+
+Importante para indexação das páginas pelos buscadores.
+
+BODY
+Delimita a área do corpo do documento. O corpo contém todas as tags e informações que devem ser mostradas ao usuário.
+
+Tipos de Marcadores HTML
+Vamos apresentar os marcadores mais utilizados e comuns do HTML. Vamos dividir os marcadores nas seguintes categorias:
+
+Marcadores de Texto.
+Marcadores de Multimídia.
+Marcadores de Estrutura.
+Marcadores de Divisão.
+Texto – Parágrafo
+Define um parágrafo de texto. Cada texto é exibido em uma linha no navegador, definindo um espaçamento acima da primeira linha e abaixo da última linha.
+
+Exemplo de um parágrafo.
+
+Texto Negrito e Itálico
+Marcam o texto como negrito ou itálico, adicionando características semânticas a esse texto.
+
+Exemplo de negrito e itálico.
+
+Texto – Quebra de Linha
+Define uma quebra de linha. O texto após <br /> é exibido na próxima linha. É um dos marcadores em que a abertura e fechamento estão apenas em um elemento (autocontidos).
+
+Exemplo de quebra de linha.
+
+Texto – Títulos
+Os marcadores de <h1> </h1> até <h6> </h6> definem vários níveis de título dentro do corpo do HTML. Cada nível possui uma formatação diferente.
+
+Exemplo de títulos.
+
+Texto – Âncoras
+Reconhecido em uma página por estar em cor diferente do resto do texto e, ao passar com o mouse sobre esse texto o cursor muda para uma mão apontando para o link.
+
+Para funcionar, o marcador <a> </a> deve ser conter um atributo, href, que indica a URL destino ao clicar no link. O link pode ser para um recurso interno, do próprio website, ou uma referência para um website externo. O link pode referenciar qualquer recurso na web (html, arquivos, imagens).
+
+Exemplo de âncoras.
+
+Já vimos que um link pode conter uma referência a um recurso externo ou a um recurso do próprio web site. Uma terceira aplicação do link é fazer referência a uma região da página web. A região é referenciada pelo link a través de seu id, utilizando o caractere “#”. Ao clicar no link, a página web “rola” até a região referenciada.
+
+Marcadores de Mídia
+Marcadores de mídia tem como efeito adicionar propriedades visuais e/ou sonoras para o website. Os marcadores são de três tipos: imagem, áudio e vídeo.
+
+Mídia – Imagem
+O marcador <img /> define uma região da página que contém uma imagem. Este marcador deve conter o atributo src, que indica a origem da imagem <img /> não tem marcador de fechamento
+
+A imagem pode estar armazenada no próprio site ou fazer referência a uma imagem da web.
+
+Exemplo de imagens.
+
+Mídia – Áudio e Vídeo
+Ambos marcadores funcionam de maneira similar: definem uma região da página que conterá player de áudio/vídeo. Este marcador deve conter outras tags source, que indica a origem da mídia. Cada <source> indica um arquivo que ele deve procurar, caso o anterior não funcione.
+
+O arquivo de som ou vídeo pode estar armazenada no próprio site ou fazer referência a um outro arquivo da web.
+
+Marcadores de Estrutura
+São marcadores utilizados para separar alguma estrutura textual, como tabelas e listas.
+
+Listas Ordenadas e Não Ordenadas
+<ul> </ul> define uma lista não ordenada (ul = unordered list). <li> </li> define um item da lista. Item são precedidos por um “ponto”. A lista inicia sempre em uma nova linha.
+
+Exemplo de lista não ordenada.
+
+<ol> </ol> define uma lista ordenada (ol = ordered list). <ol> funciona da mesma forma que a <ul>, apenas mudando os pontos da lista para números (ou letras).
+
+Exemplo de lista ordenada.
+
+Tabelas
+<table> ... </table> Delimita uma tabela, <tr> ... </tr> delimita uma linha da tabela, <td> ... </td> delimita uma célula da tabela, devendo aparecer dentro de <tr>. <th> ... </th> delimita uma célula de título da tabela, devendo aparecer dentro de <tr>.
+
+Exemplo de tabela.
+
+Pontos principais
+Atente para os tópicos a seguir. Eles devem ser estudados com muita atenção, pois representam os pontos mais importantes do capítulo.
+
+A Estrutura básica de um documento HTML não é estritamente necessário para o funcionamento da página, mas garante uma maior qualidade do seu documento;
+
+Tags podem ser escritas de duas maneiras: marcando um texto (ex; <p>texto</p>) ou apenas para marcar um efeito no texto (ex: <br/>);
+
+Treine e consulte as tags mais específicas para cada aplicação. Existem muitas tags para as situações mais diversificadas.
